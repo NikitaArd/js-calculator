@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="shake.css">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hwrap" onclick="reset()">
+            <h3 id="screen"></h3>
+        </div>
+        <div class="line">
+            <input class="simple-button" type="button" value="7" onclick="add_symbol(value)">
+            <input class="simple-button" type="button" value="8" onclick="add_symbol(value)">
+            <input class="simple-button" type="button" value="9" onclick="add_symbol(value)">
+            <input class="simple-button" type="button" value="+" onclick="add_symbol(value)">
+        </div>
+            <div class="line">
+                <input class="simple-button" type="button" value="4" onclick="add_symbol(value)">
+                <input class="simple-button" type="button" value="5" onclick="add_symbol(value)">
+                <input class="simple-button" type="button" value="6" onclick="add_symbol(value)">
+                <input class="simple-button" type="button" value="-" onclick="add_symbol(value)">
+            </div>
+        <div style="display: flex; justify-content: start;">
+            <div>
+                <div class="line">
+                    <input class="simple-button" type="button" value="1" onclick="add_symbol(value)">
+                    <input class="simple-button" type="button" value="2" onclick="add_symbol(value)">
+                    <input class="simple-button" type="button" value="3" onclick="add_symbol(value)">
+                </div>
+                <div class="line4">
+                    <input class="simple-button" type="button" value="*" onclick="add_symbol(value)">
+                    <input class="simple-button" type="button" value="0" onclick="add_symbol(value)">
+                    <input class="simple-button" type="button" value="/" onclick="add_symbol(value)">
+                </div>
+            </div>
+            <input type="button" class="simple-button" style="height: 110px; width: 40px; margin-left: 8px;" value="=" onclick="equals()">
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
